@@ -15,6 +15,9 @@ scoreboard players operation exclude tower_order = tower_right settings
 function practice:level/exclude_tower
 execute if data storage practice:towers temp[0] run data modify storage practice:towers stack set from storage practice:towers temp
 
+execute store result score pool tower_order run data get storage practice:towers stack
+execute if score direction_act settings matches 1 if score pool tower_order matches 2.. run data remove storage practice:towers stack[{index:0b}]
+
 # chose random enabled tower
 execute store result score mod rng run data get storage practice:towers stack
 function practice:random/generate

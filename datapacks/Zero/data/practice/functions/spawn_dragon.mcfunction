@@ -23,6 +23,10 @@ scoreboard players operation r rng %= 3600 c
 
 execute if score rotation settings matches 3 run scoreboard players operation r rng = value custom_rotation
 
+scoreboard players operation angle_act settings = r rng
+scoreboard players operation angle_act settings %= 3600 c
+function practice:angle/band
+
 tellraw @a[tag=debug] [{"text":"[DEBUG] Rotation: ","color":"dark_purple"},{"score":{"name":"r","objective":"rng"}}]
 
 # spawn dragon

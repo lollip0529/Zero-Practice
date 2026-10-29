@@ -1,0 +1,1 @@
+scoreboard players set 10 c 10

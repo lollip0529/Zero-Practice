@@ -16,6 +16,10 @@ execute store result score pearl_tracker settings run data get storage practice:
 
 # enable all towers
 function practice:gui/pages/home/enable_all_towers
+data modify storage practice:gui pages[0].entries[{tag:{index:12b}}] set from storage practice:gui pages[0].defaults[{tag:{index:12b}}]
+data modify storage practice:gui pages[0].entries[{tag:{index:13b}}] set from storage practice:gui pages[0].defaults[{tag:{index:13b}}]
+execute store result score tower_left settings run data get storage practice:gui pages[0].entries[{tag:{index:12b}}].value
+execute store result score tower_right settings run data get storage practice:gui pages[0].entries[{tag:{index:13b}}].value
 
 # load default loadouts
 data modify storage zero_practice_loadouts:loadouts loadouts set from storage practice:loadouts default_loadouts

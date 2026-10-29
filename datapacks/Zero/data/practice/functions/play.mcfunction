@@ -1,3 +1,5 @@
+execute if score fight_heal flags matches 1 run function practice:fight/heal_end
+
 # set location (front / back)
 scoreboard players operation location_act settings = location settings
 execute if score location settings matches 2 run scoreboard players set location_act settings 0

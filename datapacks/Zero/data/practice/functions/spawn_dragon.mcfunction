@@ -40,3 +40,5 @@ execute if score r rng matches 2700..3149 in minecraft:the_end run summon minecr
 execute if score r rng matches 3150..3599 in minecraft:the_end run summon minecraft:ender_dragon 0.0 128 0.0 {DragonPhase:0b,Rotation:[337.5f,0f]}
 
 execute store result entity @e[type=minecraft:ender_dragon,limit=1] Rotation[0] float 0.1 run scoreboard players get r rng
+
+execute if score crystal_break settings matches 1 run function practice:fight/adopt

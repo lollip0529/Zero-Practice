@@ -14,6 +14,7 @@ execute store result score iframe settings run data get storage practice:gui pag
 execute store result score show_nodes settings run data get storage practice:gui pages[1].entries[{tag:{index:10b}}].value
 execute store result score pearl_tracker settings run data get storage practice:gui pages[1].entries[{tag:{index:11b}}].value
 execute store result score natural_terrain settings run data get storage practice:gui pages[1].entries[{tag:{index:14b}}].value
+execute store result score reset_info settings run data get storage practice:gui pages[1].entries[{tag:{index:15b}}].value
 
 # enable all towers
 function practice:gui/pages/home/enable_all_towers

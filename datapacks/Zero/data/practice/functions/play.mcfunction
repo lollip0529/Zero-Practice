@@ -15,6 +15,9 @@ execute if score rotation settings matches 2 if predicate practice:rand_50 run s
 execute if score rotation settings matches 4..7 run scoreboard players operation rotation_act settings %= 2 c
 execute if score rotation settings matches 3 run function practice:angle/custom
 
+scoreboard players set angle_act settings -1
+scoreboard players set speed_act settings -1
+
 # load level
 function practice:level/load_fountain
 function practice:level/load_spawn
